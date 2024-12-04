@@ -51,40 +51,45 @@ Train the machine learning models (Neural Network and Decision Tree).
 Display the evaluation results, including confusion matrices and classification reports.
 
 <h1>Running the Tests</h1>
+
 The tests in this project include evaluating the machine learning models (Neural Network and Decision Tree) using the following metrics:
 
-<h2>Confusion Matrix: To visualize the classification performance.</h2>
-Classification Report: To evaluate precision, recall, F1-score, and accuracy.</br>
-Breakdown of Tests</br>
-Neural Network (MLPClassifier): A Multi-Layer Perceptron model to predict the drug classification.</br>
-Decision Tree (DecisionTreeClassifier): A decision tree model to predict the same.</br>
+<h2>Confusion Matrix:</h2> To visualize the classification performance.</br>
+
+<h2>Classification Report:</h2> To evaluate precision, recall, F1-score, and accuracy.</br>
+
+<h2>Breakdown of Tests</h2>
+<h3>1. Neural Network (MLPClassifier):</h3> A Multi-Layer Perceptron model to predict the drug classification.</br>
+<h3>2. Decision Tree (DecisionTreeClassifier):</h3> A decision tree model to predict the same.</br>
+
 Both models are evaluated using classification_report and confusion_matrix from sklearn.metrics.</br>
 
-python
-Copy code
+```
 from sklearn.metrics import classification_report, confusion_matrix
-
-Deployment
+```
+<h2>Deployment</h2>
 To deploy the model in a live system, you can follow these steps:
 
-Train the model using a larger dataset.
+<h4>1. Train the model using a larger dataset.</h4>
 
-Serialize the model using joblib or pickle:
+<h4>2. Serialize the model using joblib or pickle.</h4>
 
-python
-Copy code
+```
 import joblib
 joblib.dump(mlp, 'drug_classification_model.pkl')
-Deploy the serialized model on a web application or API for predictions.
+```
 
-Author
-Your Name - Initial work - Your GitHub
-License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
+<h4>3. Deploy the serialized model on a web application or API for predictions.</h4>
 
-Acknowledgments
-Thanks to the creators of scikit-learn for providing powerful machine learning tools.
-Hat tip to anyone whose code was used as inspiration or reference in this project.
-Special thanks to the contributors to the dataset, which was essential for training the models.
+<h1>Author</h1>
+<h3>Eshandeep Singh -  GitHub: eshanbhullar</h3>
+
+<h1>License</h1>
+<h3>This project is licensed under the MIT License - see the LICENSE.md file for details.</h3>
+
+<h1>Acknowledgments</h1>
+Thanks to the creators of scikit-learn for providing powerful machine learning tools.</br>
+Had tip to anyone whose code was used as inspiration or reference in this project.</br>
+Special thanks to the contributors to the dataset, which was essential for training the models.</br>
 
 
