@@ -1,5 +1,3 @@
-# Drug Classification Project
-
 ## Project Title
 
 **Drug Classification Using Machine Learning**
@@ -65,3 +63,28 @@ Both models are evaluated using classification_report and confusion_matrix from 
 python
 Copy code
 from sklearn.metrics import classification_report, confusion_matrix
+
+Deployment
+To deploy the model in a live system, you can follow these steps:
+
+Train the model using a larger dataset.
+
+Serialize the model using joblib or pickle:
+
+python
+Copy code
+import joblib
+joblib.dump(mlp, 'drug_classification_model.pkl')
+Deploy the serialized model on a web application or API for predictions.
+
+Author
+Your Name - Initial work - Your GitHub
+License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
+
+Acknowledgments
+Thanks to the creators of scikit-learn for providing powerful machine learning tools.
+Hat tip to anyone whose code was used as inspiration or reference in this project.
+Special thanks to the contributors to the dataset, which was essential for training the models.
+
+
